@@ -1,0 +1,182 @@
+.education{
+  padding:120px 0;
+}
+
+.timeline{
+
+  position:relative;
+
+  max-width:900px;
+
+  margin:auto;
+}
+
+.timeline::before{
+
+  content:'';
+
+  position:absolute;
+
+  left:50%;
+
+  top:0;
+
+  width:4px;
+
+  height:100%;
+
+  transform:
+  translateX(-50%);
+
+  background:
+  linear-gradient(
+  var(--primary),
+  var(--secondary)
+  );
+}
+
+.timeline-item{
+
+  position:relative;
+
+  width:50%;
+
+  padding:30px;
+}
+
+.timeline-item:nth-child(odd){
+
+  left:0;
+}
+
+.timeline-item:nth-child(even){
+
+  left:50%;
+}
+
+.timeline-dot{
+
+  position:absolute;
+
+  width:22px;
+  height:22px;
+
+  background:var(--primary);
+
+  border-radius:50%;
+
+  top:40px;
+
+  right:-11px;
+}
+
+.timeline-item:nth-child(even)
+.timeline-dot{
+
+  left:-11px;
+}
+
+.timeline-card{
+
+  padding:30px;
+}
+
+.timeline-card span{
+
+  color:var(--primary);
+
+  font-weight:700;
+}
+
+.timeline-card h3{
+
+  margin:10px 0;
+}
+
+.timeline-card h4{
+
+  color:var(--text-light);
+
+  margin-bottom:15px;
+}
+
+.timeline-card p{
+
+  line-height:1.8;
+}
+.edu-badges{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:10px;
+
+  margin:15px 0;
+
+}
+
+.edu-score{
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  background: #03021f;
+
+  color: #ffffff;
+
+  font-size: .85rem;
+
+  font-weight: 700;
+
+  border: none;
+}
+
+.edu-highlight{
+
+  padding:8px 14px;
+
+  border-radius:30px;
+
+  background:
+    rgba(99,102,241,.08);
+
+  color:var(--primary);
+
+  font-size:.85rem;
+
+  font-weight:600;
+}
+
+.edu-year{
+
+  display:inline-block;
+
+  margin-bottom:10px;
+
+  font-weight:700;
+
+  color:var(--primary);
+}
+@media(max-width:768px){
+
+  .timeline::before{
+
+    left:20px;
+  }
+
+  .timeline-item{
+
+    width:100%;
+
+    left:0 !important;
+
+    padding-left:60px;
+  }
+
+  .timeline-dot{
+
+    left:10px !important;
+  }
+}

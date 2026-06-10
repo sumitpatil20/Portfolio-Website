@@ -1,0 +1,24 @@
+@import './styles/variables.css';
+@import './styles/global.css';
+@import './styles/animations.css';
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  overflow-x:hidden;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+section{
+  overflow:hidden;
+}
